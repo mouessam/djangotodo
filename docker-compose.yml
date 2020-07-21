@@ -1,0 +1,12 @@
+version: '3'
+
+services:
+  django:
+    build: .
+    command: ["python", "manage.py", "runserver", "0.0.0.0:8000"]
+    volumes:
+      - .:/todo
+    ports:
+      - "80:8000"
+volumes:
+  node-modules:
