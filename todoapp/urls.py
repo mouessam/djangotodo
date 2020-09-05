@@ -34,6 +34,7 @@ schema_view = get_schema_view(
         description="This are simple todo app API for dailymealz interview task",
         contact=openapi.Contact(email="moessam@dailymealz.com"),
     ),
+    url='https://todo.dailymealz.com/',  # important bit
     public=True,
     permission_classes=(permissions.AllowAny,),
 )
